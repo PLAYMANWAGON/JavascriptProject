@@ -13,6 +13,7 @@ h1 {
     color: white;
     background-color: black;
     padding: 4vh 0 4vh 0;
+    margin: 0 0 2rem 0;
 }
 
 h1:hover {
@@ -24,4 +25,24 @@ h1:hover {
 h1:not(hover) {
     letter-spacing: 0vw;
     transition: 500ms ease-out;
+}
+
+.player-name {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.game-grid {
+    text-align: center;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    column-rule: 2px solid black;
+}
+
+input[type=text] {
+    border: 1px solid black;
+    padding: 6px;
+    margin: 2px;
+    
 }
