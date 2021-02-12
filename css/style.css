@@ -59,3 +59,9 @@ input[type=text] {
     margin: 2px;
     
 }
+
+input[type=submit] {
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+}

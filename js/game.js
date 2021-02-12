@@ -4,7 +4,16 @@ var tttBoard = [
     [0, 0, 0]
 ];
 
-var Player1 = document.getElementById('name1');
-var PLayer2 = document.getElementById('name2');
 
-console.log(Player1);
+function RegP1() {
+    var Player1 = document.getElementById("name1");
+    console.log(Player1);
+}
+
+function RegP2() {
+
+    var Player2 = document.getElementById('name2');
+    console.log(Player2);
+}
+
+
