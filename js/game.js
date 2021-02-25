@@ -4,8 +4,7 @@ var tttBoard = [
     [0, 0, 0]
 ];
 
-let gameSquare = document.querySelector("")
-
+//  let gameSquare = document.querySelector("")
 
 function RegP1() {
     var Player1 = document.getElementById("name1").value;
