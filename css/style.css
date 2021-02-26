@@ -26,7 +26,31 @@ h1:not(hover) {
     transition: 500ms ease-out;
 }
 
+.spacer{
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.textcontainer {
+    position: relative;
+    padding: 2rem;
+    min-height: 75vh;
+    min-width: 30vw;
+    max-width: 30vw;
+    background:rgb(226, 226, 226);
+    border: solid rgb(190, 190, 190);
+}
+
+#input {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+}
+
+li:hover {
+    text-decoration: line-through;
+    color: gray;
+}
 
 input[type=text] {
     border: 1px solid black;
