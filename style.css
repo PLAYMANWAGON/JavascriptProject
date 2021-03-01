@@ -41,11 +41,28 @@ h1:not(hover) {
     border: solid rgb(190, 190, 190);
 }
 
+
+
 #input {
     position: absolute;
     bottom: 1rem;
     left: 2rem;
 }
+
+.specialpicture {
+}
+
+.specialpicture > img:hover {
+    box-shadow: 0 0 92px black;
+    transform: translate(-10vw, -10vh) scale(1.2, 1.9);
+    transition: ease-out 500ms;
+}
+
+.specialpicture > img:not(hover) {
+    transition: ease-in 500ms;
+}
+
+
 
 li:hover {
     text-decoration: line-through;
@@ -64,3 +81,24 @@ input[type=submit] {
     background-color: black;
     color: white;
 }
+
+
+
+p {
+    font-size: 20px;
+}
+
+@media (max-width: 1500px) {
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    p {
+        font-size: 12px;
+    }
+}
+
