@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script defer src="game.js"></script>
+    <script defer src="list.js"></script>
     <title>JavaScript</title>
 </head>
 <body>
@@ -12,17 +12,17 @@
 
     <div class="spacer">
         <div class="textcontainer">
-            <ul>
+            <div id="input">
+                <form>
+                    <input type="text" id="addlist" placeholder="Något att göra">
+                    <input type="button" value="Håll in den här knappen för roliga effekt (och skriva på listan)" id="add">
+                </form>
+            </div>
+            <ul id="list">
                 <li>The</li>
                 <li>Stick</li>
                 <li>Man</li>
             </ul>
-            <div id="input">
-                <form>
-                    <input type="text" id="addlist" placeholder="Något att göra">
-                    <input type="submit" onclick()="RegP1()">
-                </form>
-            </div>
         </div>
         <div><a href="https://youtu.be/3kVFce1M_QQ" target="_blank"><img src="coolrider.gif" alt="Man kör motorcykel med text 'born to be Wild'"></a></div>
         <div class="textcontainer">
@@ -39,6 +39,9 @@
             Cool bild på min hund:
             <div class="specialpicture">
                 <img src="doger.jpg" alt="Bild på Aironas alaskisk malamut" style="width: 100%;" >
+            </div>
+            <div class="secretpicture">
+                <img src="secret.jpg" width="150px" >
             </div>
         </p>
         </div>
