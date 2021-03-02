@@ -41,8 +41,6 @@ h1:not(hover) {
     border: solid rgb(190, 190, 190);
 }
 
-
-
 #input {
     position: absolute;
     bottom: 1rem;
@@ -50,17 +48,29 @@ h1:not(hover) {
 }
 
 .specialpicture {
+    z-index: 2;
 }
 
 .specialpicture > img:hover {
     box-shadow: 0 0 92px black;
-    transform: translate(-10vw, -10vh) scale(1.2, 1.9);
+    transform: translate(-10vw, -10vh) scale(1.1, 1.8);
     transition: ease-out 500ms;
+}
+
+.specialpicture > img:active {
+    transform: translate(-10vw, -10vh) scale(0.7, 1.1) rotate(360deg);
 }
 
 .specialpicture > img:not(hover) {
     transition: ease-in 500ms;
 }
+
+.secretpicture {
+    position: fixed;
+    transform: translate(420px, -400px);
+    z-index: 1;
+}
+
 
 
 
@@ -76,10 +86,23 @@ input[type=text] {
     
 }
 
-input[type=submit] {
+input[type=button]{
+    position: fixed;
     padding: 0.5rem;
     background-color: black;
     color: white;
+    transition: ease-out 500ms;
+}
+
+/*den mest värdelösa knappen någonsin kan hittas här*/
+
+input[type=button]:active{
+    color: gold;
+    background-color:blue;
+    transform: scale(1.95, 1.95) rotate(2900deg) translate(-100px, -400px) skew(43deg, 10deg);
+    transition: ease-out 2000ms;
+
+    
 }
 
 
