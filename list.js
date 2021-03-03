@@ -1,13 +1,8 @@
-document.getElementById("add").onclick  = function() {
-
-    var node = document.createElement("list");
-
-    var text = document.getElementById("addlist").value; 
-
-    var textnode = document.createTextNode(text);
-
-    node.appendChild(textnode);
-
-    document.getElementById("list_item").appendChild(node);
-
+function addList() 
+{
+    var ul = document.getElementById("list");
+    var li = document.createElement("li");
+    var text = document.getElementById("text");
+    li.appendChild(document.createTextNode(text.value));
+    ul.appendChild(li);
 }
