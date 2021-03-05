@@ -73,11 +73,6 @@ h1:not(hover) {
     z-index: 1;
 }
 
-li:hover {
-    text-decoration: line-through;
-    color: gray;
-}
-
 input[type=text] {
     border: 1px solid black;
     padding: 6px;
